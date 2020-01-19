@@ -1,1 +1,29 @@
-<p>register works!</p>
+<flash-messages></flash-messages>
+<div class="container">
+  <div class="card">
+    <div class="card-title">
+      <h2>Register</h2>
+    </div>
+    <div class="card-content">
+      <form (submit)="onRegisterSubmit()">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" [(ngModel)]="name" name="name" class="form-control" required="true">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" [(ngModel)]="email" name="email" class="form-control" required="true">
+        </div>
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" [(ngModel)]="username" name="username" class="form-control" required="true">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" [(ngModel)]="password" name="password" class="form-control" required="true">
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
